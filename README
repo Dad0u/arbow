@@ -1,0 +1,7 @@
+This program is meant to mirror a folder an a machine into another folder, copying as few data as possible. It relies solely on MD5 checksum and size to identify the content of the files.
+
+This program is just at the state of a concept for now and is probably full of bugs.
+
+To use, run arbow_d.py in the destination, it will analyse the content.
+then, run arbow_s.py in the source, including the previously generated report and arbow_d.py.
+This will generate a .bat or .sh script and a folder contaning all the missing data. Simply copy these on the destination and run the script. It will delete useless files, move or copy all the needed files and delete the arbow folder.
